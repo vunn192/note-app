@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/setting.css">
+    <link rel="stylesheet" href="./css/signUp.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="/dashboard">My online note</a>
+        </h1>
+    </header>
+
+    <div class="wrapper">
+        <main>
+            <h2>SignUp</h2>
+            <form id="sign-up-form" class="main-form">
+                <input id="name-input" type="text" placeholder="Name" name="name"
+                    pattern="^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s]{3,40}$"
+                    title="3-40 characters (Vietnamese unicode is allowed)" required>
+                <input id="username-input" type="text" placeholder="Username" name="username" required
+                       pattern="^[a-zA-Z0-9](\.?[a-zA-Z0-9]){5,}@g(oogle)?mail\.com$" title="Only support gmail now">
+                <input id="password-input" type="password" placeholder="Password" name="password" required
+                    pattern="^[a-zA-Z0-9]{6,}$" title="minimum 6 characters (alphabet and number is allowed)">
+                <input id="confirm-password-input" type="password" placeholder="Confirm your password"
+                    name="confirm-password" required>
+                <p class="alert-message">Error</p>
+                <input type="submit" value="Submit">
+            </form>
+            <a href="../sign-in">Already have an account? Sign in here!</a>
+        </main>
+    </div>
+    <script src="./js/signUp.js" type="module"></script>
+</body>
+</html>

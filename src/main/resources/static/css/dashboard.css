@@ -1,0 +1,57 @@
+@import url("../css/component/pagination.css");
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#create-form,
+#search-form {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#note-list {
+    margin: 40px 0;
+}
+
+#create-content,
+#create-name,
+#search-content {
+    flex-grow: 1;
+}
+
+.note-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.note-content,
+.note-name {
+    padding: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.note-name {
+    flex-basis: 20%;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.note-button {
+    min-width: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.note-button > * {
+    cursor: pointer;
+}
